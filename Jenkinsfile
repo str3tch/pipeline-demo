@@ -12,7 +12,7 @@ pipeline{
                 sh 'echo hello'
             }
         }
-                stage('Hello Perth!'){
+        stage('Hello Perth!'){
             steps{
                 sh 'echo Hello Perth'
             }
