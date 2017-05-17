@@ -1,10 +1,14 @@
 pipeline {
-    agent { docker 'maven:3-alpine' } 
+    agent { docker 'node:4.8.3-alpine' } 
     stages {
         stage('Example Build') {
             steps {
-                sh 'echo hello'
+                sh 'node --version'
             }
         }
+        stage('Hello world') {
+            steps {
+                sh 'echo hello'
+            }
     }
 }
