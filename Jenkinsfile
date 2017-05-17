@@ -1,5 +1,5 @@
 pipeline{
-    agent{ docker 'node: 4.8.3-alpine
+    agent{ docker 'node: 4.8.3-alpine'
     } 
     stages{
         stage('Example Build'){
